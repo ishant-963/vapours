@@ -1,0 +1,214 @@
+/* Navbar Styles */
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: box-shadow var(--transition-fast);
+}
+
+.navbar-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Zone 1: Brand Wordmark */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: var(--font-display);
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.navbar-brand-symbol {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--gold-light), #FFFFFF);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  color: var(--gold-deep);
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.navbar-brand-name {
+  color: var(--text-primary);
+}
+
+.navbar-brand-dot {
+  color: var(--gold-primary);
+}
+
+/* Zone 2: Navigation Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.navbar-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color var(--transition-fast);
+}
+
+.navbar-link:hover {
+  color: var(--text-primary);
+}
+
+.navbar-link.active {
+  color: var(--gold-deep);
+  font-weight: 600;
+}
+
+.navbar-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--gold-primary);
+  border-radius: 1px;
+}
+
+/* Zone 3: Actions & Search */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.navbar-search-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.4375rem 0.875rem;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  transition: all var(--transition-fast);
+}
+
+.navbar-search-btn:hover {
+  border-color: var(--gold-border);
+  background-color: #FFFFFF;
+  color: var(--text-primary);
+}
+
+.navbar-search-kbd {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  color: var(--text-muted);
+}
+
+.navbar-library-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4375rem 0.875rem;
+  background-color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  color: var(--gold-deep);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.navbar-library-btn:hover {
+  background-color: #EDE3CD;
+  color: #79571D;
+}
+
+.navbar-library-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: var(--radius-full);
+  background-color: var(--gold-deep);
+  color: #FFFFFF;
+  font-size: 0.6875rem;
+  font-weight: 700;
+}
+
+/* Mobile Toggle */
+.navbar-mobile-toggle {
+  display: none;
+  padding: 0.5rem;
+  color: var(--text-primary);
+}
+
+/* Mobile Drawer */
+.navbar-mobile-drawer {
+  display: none;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.navbar-mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navbar-mobile-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.navbar-mobile-link.active {
+  color: var(--gold-deep);
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-mobile-toggle {
+    display: block;
+  }
+  .navbar-mobile-drawer.open {
+    display: block;
+  }
+}

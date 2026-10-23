@@ -1,0 +1,51 @@
+/* Timeline View Styles */
+.timeline-container {
+  position: relative;
+  padding: 1.5rem 0 1.5rem 2rem;
+  border-left: 2px solid var(--gold-border);
+  margin-left: 0.75rem;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-event:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.45rem;
+  top: 0.25rem;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+  background-color: #FFFFFF;
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 0 3px var(--gold-light);
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--gold-deep);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.timeline-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}

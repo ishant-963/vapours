@@ -1,0 +1,183 @@
+/* HomePage Styles */
+.home-hero-section {
+  background: radial-gradient(circle at 50% 20%, #FAF8F2 0%, #FFFFFF 100%);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 4.5rem 1.5rem 4rem 1.5rem;
+  text-align: center;
+}
+
+.home-hero-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.home-hero-kicker {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold-deep);
+  margin-bottom: 0.75rem;
+}
+
+.home-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 3.875rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+
+.home-hero-subtitle {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Hero Search Field */
+.home-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 0.625rem 1rem;
+  box-shadow: 0 8px 30px rgba(184, 149, 69, 0.12);
+  max-width: 640px;
+  margin: 0 auto 1.5rem auto;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.home-search-bar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(184, 149, 69, 0.18);
+}
+
+.home-search-input-placeholder {
+  flex: 1;
+  text-align: left;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-left: 0.75rem;
+}
+
+.home-search-kbd {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--gold-deep);
+  background-color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.5rem;
+  font-weight: 600;
+}
+
+/* Quick Category Badges */
+.home-quick-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.home-quick-tag {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.75rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.home-quick-tag:hover {
+  border-color: var(--gold-border);
+  color: var(--gold-deep);
+  background-color: var(--gold-light);
+}
+
+/* Section Header Rows */
+.home-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.home-section-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gold-deep);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: gap var(--transition-fast);
+}
+
+.home-section-link:hover {
+  gap: 0.55rem;
+}
+
+/* Category Grid on Home */
+.category-portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.category-portal-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-fast);
+}
+
+.category-portal-card:hover {
+  border-color: var(--gold-border);
+  background-color: var(--bg-surface-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-subtle);
+}
+
+.category-portal-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-deep);
+  margin-bottom: 0.75rem;
+}
+
+.category-portal-name {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.category-portal-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

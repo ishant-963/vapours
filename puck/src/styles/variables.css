@@ -1,0 +1,39 @@
+:root {
+  /* Loreverse Curatorial White & Gold Design System */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FAF9F6;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #F8F7F2;
+  --bg-tertiary: #F3EFE6;
+
+  --text-primary: #242424;
+  --text-secondary: #66635B;
+  --text-muted: #8E8A80;
+  --text-inverse: #FFFFFF;
+
+  --gold-primary: #B89545;
+  --gold-deep: #92702C;
+  --gold-light: #F7F1E1;
+  --gold-border: #E5D5B3;
+
+  --border-subtle: #EAE7DF;
+  --border-medium: #DCD7CB;
+  --border-focus: #B89545;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  --shadow-subtle: 0 1px 3px rgba(36, 36, 36, 0.04);
+  --shadow-card: 0 4px 16px rgba(36, 36, 36, 0.05);
+  --shadow-hover: 0 8px 24px rgba(184, 149, 69, 0.12);
+  --shadow-modal: 0 20px 48px rgba(20, 20, 20, 0.16);
+
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}

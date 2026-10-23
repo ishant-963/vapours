@@ -1,0 +1,12 @@
+{
+  "name": "puck-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix puck run dev",
+    "build": "npm --prefix puck run build",
+    "preview": "npm --prefix puck run preview"
+  },
+  "dependencies": {
+    "zustand": "^5.0.15"
+  }
+}

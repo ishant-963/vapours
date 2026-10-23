@@ -1,0 +1,12 @@
+/* App Layout Styles */
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.app-main-content {
+  flex: 1;
+}
